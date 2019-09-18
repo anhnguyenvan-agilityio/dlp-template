@@ -8,7 +8,7 @@
   <!-- Use the title from a page's frontmatter if it has one -->
   <title>Business Invitation</title>
   <link href="https://d1q2i93v6nvie6.cloudfront.net/public/stylesheets/site.css" rel="stylesheet" />
-  <link rel='icon' href='https://d1q2i93v6nvie6.cloudfront.net/public/images/favicon.ico' type='image/x-icon'/>
+  <link rel='icon' href='https://d1q2i93v6nvie6.cloudfront.net/public/images/favicon.ico' type='image/x-icon' />
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <style>
@@ -54,7 +54,8 @@
       <div class='row text-center-sm d-flex align-items-center'>
         <div class='col-md-3 col-lg-2'>
           <div class='round icon-xl d-none d-sm-block'>
-            <img src="https://d1q2i93v6nvie6.cloudfront.net/public/images/profile.png" style="width: 100%; height: 100%;">
+            <img src="https://d1q2i93v6nvie6.cloudfront.net/public/images/profile.png"
+              style="width: 100%; height: 100%;">
           </div>
         </div>
         <div class='col-md-9 col-lg-8'>
@@ -65,7 +66,7 @@
             Drummers (community brand promoters) drive you customers. You set the commission and only pay for business
             earned.</p>
 
-          <a href="https://business.drum.io/register" class='btn btn-outline-light'>Create a Free Profile</a>
+          <a href="https://business.drum.io/register" class='btn btn-outline-light createProfile'>Create a Free Profile</a>
         </div>
       </div>
     </div>
@@ -109,10 +110,10 @@
                 drive customers to your business.</p>
             </div>
 
-            <a href="https://business.drum.io/register" class='btn btn-light mb-3'>Create your free profile</a>
+            <a href="https://business.drum.io/register" class='btn btn-light mb-3 createProfile'>Create your free profile</a>
 
             <p class="mb-5">Already have an account? <a href="https://business.drum.io/login"
-                class="text-strong text-white">Sign In</a></p>
+                class="text-strong text-white" id="signup">Sign In</a></p>
             <br>
             <a href="https://www.youtube.com/embed/8_nf5l0aHl4" target="_blank" class='btn btn-outline-light'>Play
               Video</a>
@@ -148,7 +149,6 @@
                       <button type="submit" class="formEmailButton btn btn-primary" name="submit"
                         value="Subscribe">Submit</button>
                     </form>
-
 
                   </div>
                 </div>
@@ -223,7 +223,7 @@
 
 
       <div class="text-center">
-        <a href="https://business.drum.io/register" class='btn btn-primary'>Create a Free Profile</a>
+        <a href="https://business.drum.io/register" class='btn btn-primary createProfile'>Create a Free Profile</a>
       </div>
 
     </div>
@@ -342,7 +342,7 @@
 
 
       <div class="text-center">
-        <a href="https://business.drum.io/register" class='btn btn-primary'>Create a Free Profile</a>
+        <a href="https://business.drum.io/register" class='btn btn-primary createProfile'>Create a Free Profile</a>
       </div>
 
     </div>
@@ -511,7 +511,7 @@
 
 
       <div class="text-center">
-        <a href="https://business.drum.io/register" class='btn btn-primary'>Create a Free Profile</a>
+        <a href="https://business.drum.io/register" class='btn btn-primary createProfile'>Create a Free Profile</a>
       </div>
 
     </div>
@@ -545,7 +545,7 @@
           </div>
 
           <div class="text-center">
-            <a href="https://business.drum.io/register" class='btn btn-primary'>Create a Free Profile</a>
+            <a href="https://business.drum.io/register" class='btn btn-primary createProfile'>Create a Free Profile</a>
           </div>
 
         </div>
@@ -572,7 +572,7 @@
 
 
       <div class="text-center">
-        <a href="https://business.drum.io/register" class='btn btn-light'>Create a Free Profile</a>
+        <a href="https://business.drum.io/register" class='btn btn-light createProfile'>Create a Free Profile</a>
       </div>
 
 
@@ -615,10 +615,7 @@
                     <a href='../drummer-guidelines.html' class="text-white text-strong text-uppercase">Drummer Tips</a>
                   </div>
                   <div class="mb-0 mb-md-4">
-                    <a href='../archives.html' class="text-white text-strong text-uppercase">Blog</a>
-                  </div>
-                  <div class="mb-0 mb-md-4">
-                    <a href='../careers.html' class="text-white text-strong text-uppercase">Career</a>
+                    <a href='../careers.html' class="text-white text-strong text-uppercase">Careers</a>
                   </div>
                   <div class="mb-0 mb-md-4">
                     <a href='https://help.drum.io/hc/en-us' target="_blank"
@@ -653,7 +650,7 @@
           </div>
           <div class='col-sm-6 col-md-4 px-4 px-md-5'>
             <div class='mb-5'>
-              <h3 class="text-primary">Our Beliefs</h3>
+              <h3 class="text-primary" id="footer-link">Our Beliefs</h3>
               <ul class='list-unstyled'>
                 <li class="mb-2">You don't need a boss to earn a living.</li>
                 <li class="mb-2">You control your destiny.</li>
@@ -667,7 +664,16 @@
           <div class='col-sm-6 col-lg-4 px-4 px-md-5'>
             <a href='../drummers.html' class="btn btn-outline-light btn-sm w-100 mb-3">Become a Drummer</a>
             <a href='../business.html' class="btn btn-outline-light btn-sm w-100 mb-3">Create my business account</a>
-            <a href='../buyers.html' class="btn btn-outline-light btn-sm w-100 mb-3">Give me the offers</a>
+            <a href='../buyers.html' class="btn btn-outline-light btn-sm w-100 mb-5">Give me the offers</a>
+            <div class="col-12 p-0 text-center text-md-right">
+              <p>Drummer & Buyer Apps available on</p>
+            </div>
+            <div class="col-12 p-0 mb-3 d-flex justify-content-between">
+              <a href="https://play.google.com/store/apps/details?id=io.drum.drummer"><img
+                  src="https://drumio.netlify.com/images/android_App_store_icon.png"></a>
+              <a class="ml-3" href="https://apps.apple.com/us/app/drum-earn-promote-discover/id1458518029?ls=1"><img
+                  src="https://drumio.netlify.com/images/iOS_App_Store_Icon.png"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -692,5 +698,49 @@
   </footer>
 
 </body>
+<script>
+  function getOS() {
+    var userAgent = window.navigator.userAgent,
+      platform = window.navigator.platform,
+      macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+      windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+      iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+      os = null;
+    if (macosPlatforms.indexOf(platform) !== -1) {
+      os = 'Mac OS';
+    } else if (iosPlatforms.indexOf(platform) !== -1) {
+      os = 'iOS';
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      os = 'Windows';
+    } else if (/Android/.test(userAgent)) {
+      os = 'Android';
+    } else if (!os && /Linux/.test(platform)) {
+      os = 'Linux';
+    }
+    return os;
+  }
+  var os = getOS();
+  let linkDownloadApp = '';
+  let linkCreateProfile = '${config.domainBusiness}/register';
+  let linkSignUp = '${config.domainBusiness}/login';
+  if (os === 'iOS') {
+    linkDownloadApp = "${linkAppleApp}";
+  } else if (os === 'Mac OS') {
+    linkDownloadApp = "${linkAppleWeb}";
+  } else if (os === 'Android') {
+    linkDownloadApp = "${linkGoogleApp}";
+  } else {
+    linkDownloadApp = "${linkAppleWeb}";
+  }
+  const itemsDownloadApp = document.getElementsByClassName("downloadApp");
+  for (let x = 0; x < itemsDownloadApp.length; x++) {
+    itemsDownloadApp[x].href = linkDownloadApp;
+  }
+  const itemsCreateProfile = document.getElementsByClassName("createProfile");
+  for (let x = 0; x < itemsCreateProfile.length; x++) {
+    itemsCreateProfile[x].href = linkCreateProfile;
+  }
+  document.getElementById('signup').href = linkSignUp;
+</script>
 
 </html>

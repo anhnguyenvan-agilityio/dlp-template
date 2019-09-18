@@ -11423,7 +11423,9 @@ header .pad-section-invert-bottom {
 .list-style-none {
   list-style: none; }
 
-.navbar-toggler {
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
   color: #E0E0E0; }
 
 .navbar-toggler:not(.collapsed) {
