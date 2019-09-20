@@ -10,7 +10,6 @@
   <link href="/stylesheets/site.css" rel="stylesheet" />
   <link rel='icon' href='images/favicon.ico' type='image/x-icon'/>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
   <style>
     @media (min-width: 576px) {
       .d-sm-block {
@@ -54,7 +53,8 @@
       <div class='row text-center-sm d-flex align-items-center'>
         <div class='col-md-3 col-lg-2'>
           <div class='round icon-xl d-none d-sm-block'>
-            <img src="images/profile.jpg">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/e43e0b1806beef30adbb656e88bc1cc32b8c5585/5ccd8/images/profile.jpg">
           </div>
         </div>
         <div class='col-md-9 col-lg-8'>
@@ -80,8 +80,11 @@
 
   <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark navbar-transition">
     <a class="navbar-brand" href="../">
-      <img src="../images/logo.png" class="hide-mobile">
-      <img src="../images/logo-mobile.png" class="hide">
+      <img src="https://d33wubrfki0l68.cloudfront.net/5ce016ba67843f418eabdbb279ab5a31ac8971c1/e0a8a/images/logo.png"
+        class="hide-mobile">
+      <img
+        src="https://d33wubrfki0l68.cloudfront.net/1900dd0da5456317ce4ee302f23b76e7fefc7062/02442/images/logo-mobile.png"
+        class="hide">
     </a>
   </nav>
 
@@ -94,6 +97,7 @@
   button_target
   background_image_url
   featured_image_url
+  video_target
 -->
 
   <header class='bg-cover' style='background-image: url("images/business-header.png");'>
@@ -114,8 +118,20 @@
             <p class="mb-5">Already have an account? <a href="https://business.drum.io/login"
                 class="text-strong text-white">Sign In</a></p>
             <br>
-            <a href="https://www.youtube.com/embed/8_nf5l0aHl4" target="_blank" class='btn btn-outline-light'>Play
-              Video</a>
+            <a href="https://www.youtube.com/embed/-XAJf5FcOG4" data-toggle="modal" data-target="#videoModal"
+              class='btn btn-outline-light'>Play Video</a>
+
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-XAJf5FcOG4"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="modal fade" id="headerModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
               aria-hidden="true">
@@ -193,7 +209,8 @@
       <div class='row mb-5'>
         <div class='col-sm-4'>
           <div class='icon-lg'>
-            <img src="images/icons/icon_9.svg">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/d85da45dda82d2c758a93d1d04d60b87ef3d52c9/0962d/images/icons/icon_9.svg">
           </div>
           <h3>Aquire New Customers</h3>
           <p>
@@ -202,7 +219,8 @@
         </div>
         <div class='col-sm-4'>
           <div class='icon-lg'>
-            <img src="images/icons/icon_19.svg">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/afc5381e9480c6173a957a01ef8f760b4069d296/8595e/images/icons/icon_19.svg">
           </div>
           <h3>Grow your Business</h3>
           <p>
@@ -211,7 +229,8 @@
         </div>
         <div class='col-sm-4'>
           <div class='icon-lg'>
-            <img src="images/icons/icon_24.svg">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/a617cf9e7212b47bf7ad1b4550d41d94af579276/6c0c4/images/icons/icon_24.svg">
           </div>
           <h3>Track Results</h3>
           <p>
@@ -261,21 +280,27 @@
             <ul class="nav nav-tabs">
               <li class="nav-item">
                 <a data-toggle="tab" class="hover-card nav-link text-dark p-4 active" href="#simple-signup">
-                  <img src='images/icons/icon_23.svg' class='icon-sm'>
+                  <img
+                    src='https://d33wubrfki0l68.cloudfront.net/50ee05a7ed56279d0aafdc6dffd22c696d57e070/6cfe9/images/icons/icon_23.svg'
+                    class='icon-sm'>
                   <h3 class='pt-2 h4'>Simple Signup</h3>
                   <p>No cost to join. Start creating offers in minutes.</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a data-toggle="tab" class="hover-card nav-link text-dark p-4 " href="#create-business-profile">
-                  <img src='images/icons/icon_46.svg' class='icon-sm'>
+                  <img
+                    src='https://d33wubrfki0l68.cloudfront.net/36b48f49e37ff7c1b11dd75e6be2e833397c5a47/69527/images/icons/icon_46.svg'
+                    class='icon-sm'>
                   <h3 class='pt-2 h4'>Create Business Profile</h3>
                   <p>Use your business profile to tell buyers and Drummers what you're all about.</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a data-toggle="tab" class="hover-card nav-link text-dark p-4 " href="#publish-offers">
-                  <img src='images/icons/icon_6.svg' class='icon-sm'>
+                  <img
+                    src='https://d33wubrfki0l68.cloudfront.net/43140d7891a1192e6ec1e4d0fdc097e3e87a4ea2/2adb3/images/icons/icon_6.svg'
+                    class='icon-sm'>
                   <h3 class='pt-2 h4'>Publish Offers</h3>
                   <p>Publish savings, referral and loyalty offers for Drummer to promote.</p>
                 </a>
@@ -285,22 +310,28 @@
           <div class='col-sm-4 text-center hide-mobile'>
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="simple-signup" role="tabpanel" aria-labelledby="nav-home-tab">
-                <img src='../images/features-phone-signup.png'>
+                <img
+                  src='https://d33wubrfki0l68.cloudfront.net/fa7afcd9f8108324b342a670b1b3958ec3a38bf3/87a72/images/features-phone-signup.png'>
               </div>
               <div class="tab-pane fade " id="create-business-profile" role="tabpanel" aria-labelledby="nav-home-tab">
-                <img src='../images/features-phone-create.png'>
+                <img
+                  src='https://d33wubrfki0l68.cloudfront.net/37b38d5645243605b65039f41a0e9ebb4edddece/7f07b/images/features-phone-create.png'>
               </div>
               <div class="tab-pane fade " id="publish-offers" role="tabpanel" aria-labelledby="nav-home-tab">
-                <img src='../images/features-phone-offers.png'>
+                <img
+                  src='https://d33wubrfki0l68.cloudfront.net/d27a7529293d7a72c4cf87e68f038054efbb6f2b/7dc3f/images/features-phone-offers.png'>
               </div>
               <div class="tab-pane fade " id="only-pay-for-performance" role="tabpanel" aria-labelledby="nav-home-tab">
-                <img src='../images/features-phone-performance.png'>
+                <img
+                  src='https://d33wubrfki0l68.cloudfront.net/693fd29edea5dde6c6fc58aece4ae1f9bb943033/da7df/images/features-phone-performance.png'>
               </div>
               <div class="tab-pane fade " id="record-redemptions" role="tabpanel" aria-labelledby="nav-home-tab">
-                <img src='../images/features-phone-redemptions.png'>
+                <img
+                  src='https://d33wubrfki0l68.cloudfront.net/84098d5a995a68c3435221e4b40443f3c23daaf7/6853d/images/features-phone-redemptions.png'>
               </div>
               <div class="tab-pane fade " id="track-performance" role="tabpanel" aria-labelledby="nav-home-tab">
-                <img src='../images/features-phone-track.png'>
+                <img
+                  src='https://d33wubrfki0l68.cloudfront.net/5fb90b1fafe34b4141297e175acaf29f976e7239/20d2a/images/features-phone-track.png'>
               </div>
             </div>
           </div>
@@ -308,7 +339,9 @@
             <ul class="nav nav-tabs">
               <li class="nav-item">
                 <a data-toggle="tab" class="hover-card nav-link text-dark p-4" href="#only-pay-for-performance">
-                  <img src='images/icons/icon_48.svg' class='icon-sm'>
+                  <img
+                    src='https://d33wubrfki0l68.cloudfront.net/2ee622cc3b76a3fb0c14403709cb5b2041a867e2/83146/images/icons/icon_48.svg'
+                    class='icon-sm'>
                   <h3 class='pt-2 h4'>Only pay for performance</h3>
                   <p>You choose the price you are willing to pay for a customer. Only pay the commission when a
                     redemption is recorded.</p>
@@ -316,14 +349,18 @@
               </li>
               <li class="nav-item">
                 <a data-toggle="tab" class="hover-card nav-link text-dark p-4" href="#record-redemptions">
-                  <img src='images/icons/icon_5.svg' class='icon-sm'>
+                  <img
+                    src='https://d33wubrfki0l68.cloudfront.net/65d71d1d56e01fa87239d2213b7ec903267de36c/ad0ac/images/icons/icon_5.svg'
+                    class='icon-sm'>
                   <h3 class='pt-2 h4'>Record Redemptions</h3>
                   <p>Use the iOS and Android Drum QR scanner app to record your customer's Drum offer redemptions.</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a data-toggle="tab" class="hover-card nav-link text-dark p-4" href="#track-performance">
-                  <img src='images/icons/icon_24.svg' class='icon-sm'>
+                  <img
+                    src='https://d33wubrfki0l68.cloudfront.net/a617cf9e7212b47bf7ad1b4550d41d94af579276/6c0c4/images/icons/icon_24.svg'
+                    class='icon-sm'>
                   <h3 class='pt-2 h4'>Track Performance</h3>
                   <p>Track redemptions of your offers and view the performance of your top Drummers.</p>
                 </a>
@@ -377,7 +414,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_34.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/bb7f574900313dcf4b28f817f544ffe52066f203/dbebc/images/icons/icon_34.svg">
                 </div>
                 <h3 class='h4'>
                   Beauty Spa
@@ -389,7 +427,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_43.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/e76c3bccfe62fe64510ef427b86b7de87d2bd9a6/9c88c/images/icons/icon_43.svg">
                 </div>
                 <h3 class='h4'>
                   Personal Services
@@ -401,7 +440,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_36.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/59b26629329fd3d0322258b9b0d2ffdb02112466/71a3e/images/icons/icon_36.svg">
                 </div>
                 <h3 class='h4'>
                   Retail
@@ -413,7 +453,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_41.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/aa7a33ec04f34b914211a4d7ddd96ffac96c4f18/65871/images/icons/icon_41.svg">
                 </div>
                 <h3 class='h4'>
                   Food & Drink
@@ -425,7 +466,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_42.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/c5a62dce7ed4576f3fd29813de1ff45a2c1ee656/3f142/images/icons/icon_42.svg">
                 </div>
                 <h3 class='h4'>
                   Automotive
@@ -437,7 +479,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_37.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/f9eb65dcaa8f2d6acc003f27eeaf402c86a4278b/4b012/images/icons/icon_37.svg">
                 </div>
                 <h3 class='h4'>
                   Health & Fitness
@@ -449,7 +492,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_44.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/4f3f485b7663b870cf66e34d9ee566a853358dd8/ded64/images/icons/icon_44.svg">
                 </div>
                 <h3 class='h4'>
                   Travel
@@ -461,7 +505,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_43.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/e76c3bccfe62fe64510ef427b86b7de87d2bd9a6/9c88c/images/icons/icon_43.svg">
                 </div>
                 <h3 class='h4'>
                   Business Service
@@ -473,7 +518,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_40.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/160dd52da7ef4f739683b4bf5c1b97f4a7e7b2f8/417ca/images/icons/icon_40.svg">
                 </div>
                 <h3 class='h4'>
                   Home Service
@@ -485,7 +531,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_39.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/a324537c7b62d870dc393f7b99d3b8b87e26da93/9c62d/images/icons/icon_39.svg">
                 </div>
                 <h3 class='h4'>
                   Things to do
@@ -497,7 +544,8 @@
             <div class='card w150-fixed h150-fixed mb-3'>
               <div class='card-body'>
                 <div class='icon-sm center'>
-                  <img src="images/icons/icon_45.svg">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/5ffc950406ad9f501a05eb3b37dcc88d0a1ee5a0/c8418/images/icons/icon_45.svg">
                 </div>
                 <h3 class='h4'>
                   Utilities
@@ -522,7 +570,8 @@
     <div class='container'>
       <div class='row'>
         <div class='col-sm-7'>
-          <img src="images/business-laptop-2.png">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/8665ddedd4724fded335314ad2bfb438f543dd9a/78ef2/images/business-laptop-2.png">
         </div>
         <div class='col-sm-5'>
           <div class='mb-5'>
@@ -576,7 +625,8 @@
 
 
       <div class='pad-section-invert-bottom mt-5'>
-        <img src="images/business-phone.png">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/874707029b9db5dbbbb24ac0f13701c86563a1ab/ca3fe/images/business-phone.png">
       </div>
     </div>
   </section>
@@ -591,7 +641,9 @@
         <div class='row'>
           <div class='col-sm-6 col-md-4 px-4 px-md-5'>
             <div class="logo-footer mb-3">
-              <img src="../images/drum-logo-footer.png" class='mb-4'>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/3064100e680b7e671af390a1cf9d1f1f94c78136/b78ef/images/drum-logo-footer.png"
+                class='mb-4'>
             </div>
             <div class='mb-4'>
               <div class="row">
@@ -600,21 +652,24 @@
                     <a href="../" class="text-white text-strong text-uppercase">Home</a>
                   </div>
                   <div class="mb-0 mb-md-4">
-                    <a href='../drummers.html' class="text-white text-strong text-uppercase">Drummers</a>
+                    <a href='/drummers' class='text-white text-strong text-uppercase'>Drummers</a>
                   </div>
                   <div class="mb-0 mb-md-4">
-                    <a href='../buyers.html' class="text-white text-strong text-uppercase">Buyers</a>
+                    <a href='/buyers' class='text-white text-strong text-uppercase'>Buyers</a>
                   </div>
                   <div class="mb-0 mb-md-4">
-                    <a href='../business.html' class="text-white text-strong text-uppercase">Businesses</a>
+                    <a href='/business' class='text-white text-strong text-uppercase'>Businesses</a>
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
                   <div class="mb-0 mb-md-4">
-                    <a href='../drummer-guidelines.html' class="text-white text-strong text-uppercase">Drummer Tips</a>
+                    <a href='/drummer-guidelines' class='text-white text-strong text-uppercase'>Drummer Tips</a>
                   </div>
                   <div class="mb-0 mb-md-4">
-                    <a href='../careers.html' class="text-white text-strong text-uppercase">Careers</a>
+                    <a href='/careers' class='text-white text-strong text-uppercase'>Careers</a>
+                  </div>
+                  <div class="mb-0 mb-md-4">
+                    <a href='http://blog.drum.io' class="text-white text-strong text-uppercase">Blog</a>
                   </div>
                   <div class="mb-0 mb-md-4">
                     <a href='https://help.drum.io/hc/en-us' target="_blank"
@@ -661,17 +716,17 @@
             </div>
           </div>
           <div class='col-sm-6 col-lg-4 px-4 px-md-5'>
-            <a href='../drummers.html' class="btn btn-outline-light btn-sm w-100 mb-3">Become a Drummer</a>
-            <a href='../business.html' class="btn btn-outline-light btn-sm w-100 mb-3">Create my business account</a>
-            <a href='../buyers.html' class="btn btn-outline-light btn-sm w-100 mb-5">Give me the offers</a>
+            <a href='/drummers' class='btn btn-outline-light btn-sm w-100 mb-3'>Become a Drummer</a>
+            <a href='/business' class='btn btn-outline-light btn-sm w-100 mb-3'>Create my business account</a>
+            <a href='/buyers' class='btn btn-outline-light btn-sm w-100 mb-5'>Give me the offers</a>
             <div class="col-12 p-0 text-center text-md-right">
               <p>Drummer & Buyer Apps available on</p>
             </div>
             <div class="col-12 p-0 mb-3 d-flex justify-content-between">
               <a href="https://play.google.com/store/apps/details?id=io.drum.drummer"><img
-                  src="/images/android_App_store_icon.png"></a>
+                  src="https://d33wubrfki0l68.cloudfront.net/cda33f443fa5d6ef09a55dd9ae97fb238c3305f2/1ce6a/images/android_app_store_icon.png"></a>
               <a class="ml-3" href="https://apps.apple.com/us/app/drum-earn-promote-discover/id1458518029?ls=1"><img
-                  src="/images/iOS_App_Store_Icon.png"></a>
+                  src="https://d33wubrfki0l68.cloudfront.net/a0f885f25b64257ce8cd9a461f43264976487747/a87a1/images/ios_app_store_icon.png"></a>
             </div>
           </div>
         </div>
@@ -685,10 +740,10 @@
         <div class='col-sm-6'>
           <ul class='list-inline text-right'>
             <li class='list-inline-item'>
-              <a href='../terms.html' class='text-white'>Terms of Service</a>
+              <a href='/terms' class='text-white'>Terms of Service</a>
             </li>
             <li class='list-inline-item'>
-              <a href='../privacy.html' class='text-white'>Privacy</a>
+              <a href='/privacy' class='text-white'>Privacy</a>
             </li>
           </ul>
         </div>
