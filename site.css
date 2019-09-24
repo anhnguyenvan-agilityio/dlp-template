@@ -10969,13 +10969,18 @@ a.text-light:active, a.text-light:focus, a.text-light:hover {
   .table .thead-dark td,
   .table .thead-dark th {
     color: inherit; } }
-/*@import "material_icons";*/
 @font-face {
   font-family: Gullias;
   src: url(../fonts/Gullias.ttf); }
 @font-face {
   font-family: 'Roboto';
   src: url(../fonts/Roboto.ttf); }
+@font-face {
+  font-family: 'Robotolight';
+  src: url(../fonts/Roboto-Light.ttf); }
+@font-face {
+  font-family: 'Sunvalley';
+  src: url(../fonts/Sun-Valley.ttf); }
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -10988,13 +10993,13 @@ h4, .h4 {
   font-weight: 700; }
 
 h1, .h1 {
-  font-family: Gullias;
+  font-family: 'Sunvalley', sans-serif;
   font-size: 3.5rem;
   letter-spacing: .2rem;
   margin-bottom: 1.5rem; }
 
 h2, .h2 {
-  font-family: Gullias;
+  font-family: 'Sunvalley', sans-serif;
   font-size: 2.5rem;
   letter-spacing: .2rem;
   margin-bottom: 1.5rem;
@@ -11003,17 +11008,19 @@ h2, .h2 {
 h4, .h4 {
   font-size: 1.1rem; }
 
-p, li {
+p, a, li {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px; }
 
 aside.sticky-top {
   top: 110px; }
+  aside.sticky-top.top-sm {
+    top: 30px; }
 
 header .pad-section {
   padding-top: 175px;
-  padding-bottom: 135px; }
+  padding-bottom: 100px; }
 
 footer .pad-section {
   padding-bottom: 75px; }
@@ -11037,6 +11044,26 @@ hr.special {
     position: absolute;
     text-align: center;
     top: -33px; }
+
+hr.hr-short {
+  max-width: 3rem;
+  margin-left: initial; }
+
+.txt-header-lg {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-family: 'Robotolight', sans-serif; }
+
+.link {
+  cursor: pointer;
+  color: #53c5b5; }
+
+.text-small {
+  font-size: 0.8rem; }
+
+.link {
+  cursor: pointer;
+  color: #53c5b5; }
 
 .hr-footer {
   background-color: rgba(255, 255, 255, 0.5); }
@@ -11077,6 +11104,15 @@ hr.special {
 .navbar-nav .show > .nav-link {
   font-weight: bold; }
 
+.navbar-brand {
+  width: 180px; }
+
+.navbar-brand-mobile {
+  height: 50px; }
+
+.logo-footer {
+  width: 190px; }
+
 .nav-link.active,
 .btn-flat-primary,
 .btn-flat-primary:active,
@@ -11091,7 +11127,21 @@ hr.special {
 .navbar-fixed-top {
   -webkit-box-shadow: none;
   box-shadow: none;
-  z-index: 999999; }
+  z-index: 5; }
+
+.hover-card.nav-link {
+  text-transform: none; }
+
+.hover-card.nav-link.active {
+  color: #424242 !important;
+  background-color: white !important; }
+  .hover-card.nav-link.active::before {
+    display: none; }
+  .hover-card.nav-link.active:hover {
+    background-color: white !important; }
+
+.nav-tabs-material .nav-tabs-indicator {
+  display: none !important; }
 
 .text-white {
   color: white; }
@@ -11120,6 +11170,10 @@ hr.special {
   .bg-primary h2 {
     color: white; }
 
+.nav-tabs {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
 .bg-dark {
   color: white; }
 
@@ -11141,9 +11195,6 @@ hr.special {
 .bg-light {
   background-color: white !important; }
 
-.bg-gray {
-  background-color: #eee; }
-
 .bg-white {
   background-color: white; }
 
@@ -11153,10 +11204,16 @@ hr.special {
   background: linear-gradient(0deg, #1c7a6d 0%, #53c5b5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c7a6d",endColorstr="#53c5b5",GradientType=1); }
 
+.bg-gray {
+  background-color: #f5f5f5; }
+
 .btn {
   border-radius: 500px;
   font-weight: 700;
   padding: 1rem 2rem; }
+
+.btn-pad-sm {
+  padding: 0.5rem 2rem; }
 
 .btn-sm,
 .btn-group-sm > .btn,
@@ -11180,7 +11237,17 @@ input.form-control:focus {
   box-shadow: inset 0 -2px 0 -1px #53c5b5; }
 
 .btn-primary {
-  background-color: #53c5b5; }
+  background-color: #53c5b5;
+  color: white; }
+
+.btn-primary-nav {
+  border: solid 2px #53c5b5;
+  color: #53c5b5;
+  background-color: white; }
+  .btn-primary-nav:hover {
+    color: #53c5b5; }
+  .btn-primary-nav:focus {
+    color: #53c5b5; }
 
 .btn-light {
   color: #53c5b5;
@@ -11202,8 +11269,8 @@ input.form-control:focus {
 
 header .pad-section-invert-bottom {
   position: absolute;
-  bottom: -80px;
-  z-index: 999; }
+  bottom: 30px;
+  z-index: 4; }
 
 .pad-section-sm {
   padding-top: 30px;
@@ -11214,8 +11281,8 @@ header .pad-section-invert-bottom {
   padding-bottom: 60px; }
 
 .pad-section-lg {
-  padding-top: 90px;
-  padding-bottom: 90px; }
+  padding-top: 70px;
+  padding-bottom: 70px; }
 
 .pad {
   padding: 1rem; }
@@ -11267,14 +11334,17 @@ header .pad-section-invert-bottom {
   margin-bottom: 1.5rem; }
 
 .w150-fixed {
-  width: 150px; }
+  width: 170px; }
+
+.h150-fixed {
+  min-height: 170px; }
 
 .icon-md {
   max-width: 100px;
   margin-bottom: .5rem; }
 
 .icon-sm {
-  width: 50px;
+  width: 70px;
   margin-bottom: .5rem; }
 
 .icon-xs {
@@ -11313,6 +11383,9 @@ header .pad-section-invert-bottom {
 
 .display-inline-block {
   display: inline-block; }
+
+.display-inline {
+  display: inline; }
 
 .nested-badge {
   position: absolute;
@@ -11357,6 +11430,34 @@ header .pad-section-invert-bottom {
 .hide {
   display: none; }
 
+.list-style-none {
+  list-style: none; }
+
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  color: #E0E0E0; }
+
+.navbar-toggler:not(.collapsed) {
+  color: #333; }
+
+.navbar-toggler:not(.collapsed) .fa-bars:before {
+  content: "\f00d"; }
+
+.header-modal {
+  background-color: white;
+  border-radius: 10px;
+  color: #53c5b5; }
+
+.hover-card {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px; }
+  .hover-card.active {
+    -webkit-box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.3);
+            box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.3);
+    color: #333; }
+
 @media only screen and (max-width: 768px) {
   header .pad-section {
     padding-top: 75px;
@@ -11371,6 +11472,18 @@ header .pad-section-invert-bottom {
   p {
     margin-top: 0;
     margin-bottom: 1.5rem; }
+
+  .navbar-collapse {
+    width: 100%;
+    margin: -80px -20px 0px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: white; }
+    .navbar-collapse li {
+      width: 100%;
+      text-align: center; }
+      .navbar-collapse li a.nav-link {
+        color: #333; }
 
   .pad-xl {
     padding: 2rem; }
@@ -11393,6 +11506,11 @@ header .pad-section-invert-bottom {
 
   .text-center-sm {
     text-align: center; }
+
+  .center-sm,
+  hr.center-sm {
+    margin-left: auto !important;
+    margin-right: auto !important; }
 
   .timeline-wrapper::before {
     margin-left: 0;
